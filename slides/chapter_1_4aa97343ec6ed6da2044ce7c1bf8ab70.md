@@ -17,7 +17,7 @@ title: Data Scientist & Founder
 
 
 `@script`
-I hope you're now ready to learn about binary classification, which it's the same as saying two-class classification. So let's dive in.
+You're now ready to learn about binary classification, which it's the same as saying a two-class or two-state classification. So let's dive in.
 
 
 ---
@@ -30,15 +30,12 @@ center_content: true
 ```
 
 `@part1`
-Examples
-
 - Fraudulent or non fraudulent client.
-- Swimming or jogging.
+- Swimming or running.
 - Winter or Summer.
 - Cat or Dog.
 - Dead or alive.
-
-...
+- ...
 
 
 `@part2`
@@ -46,11 +43,11 @@ Examples
 
 
 `@script`
-You will use binary classification when you want to predict and outcome which solely consist of two classes. A positive or negative, two state output.
+You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes.
 
 
 ---
-## The architecture to our problem.
+## An architecture for our problem.
 
 ```yaml
 type: "TwoColumns"
@@ -58,7 +55,7 @@ key: "8eaa86bfe5"
 ```
 
 `@part1`
--
+
 
 
 `@part2`
@@ -66,7 +63,99 @@ key: "8eaa86bfe5"
 
 
 `@script`
-Our neural network architecture, specially when talking about their input and output layers. Closely depend on the type of problem we are solving. For binary classification, although it's not the only option, we frequently have a single output neuron with a sigmoid activation function.
+Our neural network architecture closely depends on the type of problem we are solving. For binary classification we have an input layer of N neurons, matching the number of features of our dataset.
+
+
+---
+## An architecture for our problem.
+
+```yaml
+type: "FullImageSlide"
+key: "0e186506b7"
+```
+
+`@part1`
+
+
+
+`@script`
+Then we have a number of hidden layers, this will vary depending on our data and experimentation.
+
+
+---
+## An architecture for our problem.
+
+```yaml
+type: "FullImageSlide"
+key: "3054fd6daf"
+```
+
+`@part1`
+
+
+
+`@script`
+We finally end up with a single output neuron which makes use of the sigmoid activation function. It's important to note that, regardless of the activation functions used for the previous layers, we need the sigmoid activation function for this output node.
+
+
+---
+## The sigmoid function.
+
+```yaml
+type: "TwoRows"
+key: "38db70007c"
+```
+
+`@part1`
+
+
+
+`@part2`
+
+
+
+`@script`
+The sigmoid activation function squashes our neuron output to a number between 0 and 1. We can look at this output as the probability of our output to be in one class or another. So we can set a threshold and say everything below 0.5 will be in class A and therefore everything above will be classified as our class B.
+
+
+---
+## Let's build it.
+
+```yaml
+type: "TwoColumns"
+key: "cacbf0008f"
+```
+
+`@part1`
+
+
+
+`@part2`
+
+
+
+`@script`
+
+
+
+---
+## Binary Cross Entropy
+
+```yaml
+type: "TwoColumns"
+key: "1ff3fc83a6"
+```
+
+`@part1`
+
+
+
+`@part2`
+
+
+
+`@script`
+
 
 
 ---
