@@ -13,7 +13,24 @@ key: "2552584a8c"
 `@lower_third`
 
 name: Miguel Esteban
-title: Data Scientist, Endesa
+title: Data Scientist & Founder
+
+
+`@script`
+
+
+
+---
+## Insert title here...
+
+```yaml
+type: "FullImageSlide"
+key: "01833a332b"
+center_content: false
+```
+
+`@part1`
+
 
 
 `@script`
