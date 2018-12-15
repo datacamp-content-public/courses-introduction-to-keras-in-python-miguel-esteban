@@ -34,7 +34,7 @@ center_content: false
 
 
 `@script`
-I hope you're now excited to learn about another type of problem, classification. Binary classification in particular.
+I hope you're ready to learn about binary classification, which it's the same as saying two-class classification.
 
 
 ---
