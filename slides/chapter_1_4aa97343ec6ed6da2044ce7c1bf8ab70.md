@@ -115,7 +115,7 @@ key: "38db70007c"
 
 
 `@script`
-The sigmoid activation function squashes our neuron output to a number between 0 and 1. We can look at this output as the probability of our output to be in one class or another. So we can set a threshold and say everything below 0.5 will be in class A and therefore everything above will be classified as our class B.
+The sigmoid activation function squashes our neuron output to a number between 0 and 1. We can look at this output as the probability of our observation to be in one class or another. So we can set a threshold and say everything below 0.5 will be in class A and therefore everything above will be classified as our class B.
 
 
 ---
