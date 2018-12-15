@@ -21,7 +21,7 @@ title: Data Scientist & Founder
 
 
 ---
-## Insert title here...
+## Objective
 
 ```yaml
 type: "FullImageSlide"
@@ -34,7 +34,7 @@ center_content: false
 
 
 `@script`
-
+I hope you're now excited to learn about another type of problem, classification. Binary classification in particular.
 
 
 ---
