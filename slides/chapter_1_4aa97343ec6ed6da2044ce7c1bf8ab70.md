@@ -50,6 +50,26 @@ You will use binary classification when you want to predict and outcome which so
 
 
 ---
+## The architecture to our problem.
+
+```yaml
+type: "TwoColumns"
+key: "8eaa86bfe5"
+```
+
+`@part1`
+-
+
+
+`@part2`
+
+
+
+`@script`
+Our neural network architecture, specially when talking about their input and output layers. Closely depend on the type of problem we are solving. For binary classification, although it's not the only option, we frequently have a single output neuron with a sigmoid activation function.
+
+
+---
 ## Final Slide
 
 ```yaml
