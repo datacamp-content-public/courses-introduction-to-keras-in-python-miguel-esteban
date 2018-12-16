@@ -142,6 +142,7 @@ The sigmoid activation function squashes our neuron output to a number between 0
 ```yaml
 type: "TwoRows"
 key: "060307d6c5"
+center_content: true
 ```
 
 `@part1`
@@ -158,13 +159,13 @@ model = Sequential()
 model.add(Dense(4,input_shape=(2,),activation='tanh'))
 ```{{3}}
 ```python
-# Add output layer, using the sigmoid activation
+# Add output layer, using sigmoid activation
 model.add(Dense(1,activation='sigmoid'))
 ```{{4}}
 
 
 `@part2`
-![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg){{4}}
+![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg){{5}}
 
 
 `@script`
@@ -180,22 +181,27 @@ Our model is ready to be trained.
 ## Compiling our model.
 
 ```yaml
-type: "TwoColumns"
-key: "fa203d4d8e"
+type: "TwoRows"
+key: "26d773f070"
+center_content: true
 ```
 
 `@part1`
 ```python
-
-```
+from keras.optimizers import SGD
+```{{1}}
+```python
+# Compile our model, we'll use binary-crossentropy
+model.compile(optimizer=SGD(lr=0.5),loss='binary_crossentropy',metrics=['accuracy']
+```{{2}}
 
 
 `@part2`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg){{5}}
 
 
 `@script`
-Before training we need to compile our model.
+Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. We will also calculate accuracy as a metric to our model.
 
 
 ---
