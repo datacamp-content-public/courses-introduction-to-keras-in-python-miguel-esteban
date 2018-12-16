@@ -39,7 +39,9 @@ center_content: true
 
 
 `@part2`
-![](https://assets.datacamp.com/production/repositories/4255/datasets/e895a67aaa291e32cd7896c0c07cd6f91b520f4d/binaryClassificationExample_1.png)
+**Separate blue from red circles.
+**
+![](https://assets.datacamp.com/production/repositories/4255/datasets/9a5729386cd27addd95b1a66a42f0e4c2cbb18aa/binaryClassificationExample_1.png)
 
 
 `@script`
