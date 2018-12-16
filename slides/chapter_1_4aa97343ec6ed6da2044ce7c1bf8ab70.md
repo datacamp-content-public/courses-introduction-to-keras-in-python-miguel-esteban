@@ -49,7 +49,7 @@ You will use binary classification when you want to solve problems where you pre
 
 
 ---
-## Our dataset
+## Our Dataset
 
 ```yaml
 type: "TwoColumns"
@@ -67,7 +67,7 @@ key: "955fcee383"
 
 
 `@script`
-
+The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The Y variable encodes the labels, which are 1 for red circles and 0 for blue circles.
 
 
 ---
@@ -213,7 +213,9 @@ from keras.optimizers import SGD
 ```{{1}}
 ```python
 # Compile our model, we'll use binary-crossentropy
-model.compile(optimizer=SGD(lr=0.5),loss='binary_crossentropy',metrics=['accuracy']
+model.compile(optimizer=SGD(lr=0.5),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
 ```{{2}}
 ```python
 model.train(X,y,epochs=20)
