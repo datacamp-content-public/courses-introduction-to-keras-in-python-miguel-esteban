@@ -247,5 +247,5 @@ key: "2b83e62a1e"
 ```
 
 `@script`
-Now you've learned the basics it's time to have some fun with this new architecture you've learned.
+Now you've learned the basics, it's time to have some fun with this new architecture you've learned.
 
