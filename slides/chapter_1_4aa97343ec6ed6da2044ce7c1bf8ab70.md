@@ -41,15 +41,37 @@ center_content: true
 `@part2`
 **Separate Blue and Red Circles.
 **
-![](https://assets.datacamp.com/production/repositories/4255/datasets/2c3b85207be989718296699359a34fa49ec18da1/binaryClassificationExample_1.png)
+![](https://assets.datacamp.com/production/repositories/4255/datasets/2bb6403d0f63d721f8ec54dd28954a3b07c577af/binaryClassificationExample_2.png)
 
 
 `@script`
-You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate the blue and red circles, as shown in the image. So let's try to do so.
+You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate the blue and red circles, as shown in the image. So let's try to do so.
 
 
 ---
-## An architecture for our problem.
+## Our dataset
+
+```yaml
+type: "TwoColumns"
+key: "955fcee383"
+```
+
+`@part1`
+
+
+
+`@part2`
+**Separate Blue and Red Circles.
+**
+![](https://assets.datacamp.com/production/repositories/4255/datasets/2bb6403d0f63d721f8ec54dd28954a3b07c577af/binaryClassificationExample_2.png)
+
+
+`@script`
+
+
+
+---
+## The NN architecture
 
 ```yaml
 type: "FullImageSlide"
@@ -65,7 +87,7 @@ This is the neural network we will build to classify red and blue dots in our gr
 
 
 ---
-## An architecture for our problem II
+## The NN architecture II
 
 ```yaml
 type: "FullImageSlide"
@@ -83,7 +105,7 @@ In this case I have two neurons as an input layer, one for the x coordinate and 
 
 
 ---
-## An architecture for our problem III
+## The NN architecture III
 
 ```yaml
 type: "FullImageSlide"
@@ -101,7 +123,7 @@ Then we have a number of hidden layers, this will vary depending on our data and
 
 
 ---
-## An architecture for our problem IV
+## The NN architecture IV
 
 ```yaml
 type: "FullImageSlide"
@@ -178,12 +200,11 @@ Our model is ready to be trained.
 
 
 ---
-## Compiling our model.
+## Compiling and training.
 
 ```yaml
-type: "TwoRows"
-key: "26d773f070"
-center_content: true
+type: "FullCodeSlide"
+key: "52aaa381af"
 ```
 
 `@part1`
@@ -194,14 +215,14 @@ from keras.optimizers import SGD
 # Compile our model, we'll use binary-crossentropy
 model.compile(optimizer=SGD(lr=0.5),loss='binary_crossentropy',metrics=['accuracy']
 ```{{2}}
-
-
-`@part2`
-![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg){{5}}
+```python
+model.train(X,y,epochs=20)
+```{{3}}
+![](https://assets.datacamp.com/production/repositories/4255/datasets/1b4f75fe245abddd0bc082df7e4b72ec8aabb589/binaryClassificationExample_1.png){{4}}
 
 
 `@script`
-Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. We will also calculate accuracy as a metric to our model.
+Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 when the actual observation label is 1 would be a bad and result in a high loss value.
 
 
 ---
