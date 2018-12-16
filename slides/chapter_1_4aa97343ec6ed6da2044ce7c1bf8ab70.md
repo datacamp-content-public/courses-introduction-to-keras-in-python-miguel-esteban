@@ -45,7 +45,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could be learning the boundaries to separate the blue and red circles shown in the image. So let's try to do so.
+You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance, distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could be learning the boundaries to separate the blue and red circles shown in the image. So let's try to do so.
 
 
 ---
@@ -195,7 +195,7 @@ So let's build our model in keras.
 
 - We start by importing the sequential model and the dense layer.
 - We then create a sequential model.
-- We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function, for this hidden layer. 
+- We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons. We will use the tanh as an activation function, for this hidden layer. 
 - We finally add an output layer which contains a single neuron, we make use of the sigmoid activation function so that we achieve the behavior we expect from this network.
 
 Our model is ready to be trained.
@@ -229,13 +229,13 @@ model.train(X,y,epochs=20)
 Just as before, we need to compile our model before training. 
 We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. 
 
-Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a value very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
+Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a value very close to 0, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
 
 We finally train our model for 20 epochs passing our dataset X and our labels y as parameters.
 
 The boundaries this model learned to classify our circles is shown in the graph below.
 
-It did pretty well!
+I think it did pretty well!
 
 
 ---
