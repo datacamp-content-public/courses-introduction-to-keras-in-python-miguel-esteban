@@ -52,16 +52,12 @@ You will use binary classification when you want to solve problems which consist
 ## An architecture for our problem.
 
 ```yaml
-type: "TwoColumns"
-key: "8eaa86bfe5"
+type: "FullImageSlide"
+key: "dde3977ea4"
 ```
 
 `@part1`
-
-
-
-`@part2`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/0ac38616114bffe1b1e8031d88ba5f5421396ca5/nn_bin_class_1.jpg)
 
 
 `@script`
@@ -69,15 +65,35 @@ Our neural network architecture closely depends on the type of problem we are so
 
 
 ---
-## An architecture for our problem.
+## An architecture for our problem II
 
 ```yaml
 type: "FullImageSlide"
-key: "0e186506b7"
+key: "6f00141876"
+disable_transition: true
+center_content: true
 ```
 
 `@part1`
+![](https://assets.datacamp.com/production/repositories/4255/datasets/a2700675a47a36b8dbd19d9891fa78b4803e0fdd/nn_bin_class_2.jpg)
 
+
+`@script`
+In this case I have two neurons as an input layer, you can think of them as the x and y components of each of the points on a graph.
+
+
+---
+## An architecture for our problem III
+
+```yaml
+type: "FullImageSlide"
+key: "d85bfa61aa"
+disable_transition: true
+center_content: true
+```
+
+`@part1`
+![](https://assets.datacamp.com/production/repositories/4255/datasets/1c7f14318c26b4b8887031ef1edb65d0d5999083/nn_bin_class_3.jpg)
 
 
 `@script`
