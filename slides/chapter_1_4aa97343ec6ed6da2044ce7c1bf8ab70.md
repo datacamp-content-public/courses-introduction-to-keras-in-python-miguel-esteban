@@ -17,7 +17,7 @@ title: Data Scientist & Founder
 
 
 `@script`
-You're now ready to learn about binary classification, which it's the same as saying a two-class or two-state classification. So let's dive in.
+You're now ready to learn about binary classification, which it's the same as saying a two-class classification. So let's dive in.
 
 
 ---
@@ -45,7 +45,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, if a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning the boundaries to separate the blue from the red circles as shown in the image.
+You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate blue from the red circles as shown in the image.
 
 
 ---
