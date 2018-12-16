@@ -228,7 +228,7 @@ Just as before, we need to compile our model before training. We will use stocha
 
 
 ---
-## Final Slide
+## Let's practice !
 
 ```yaml
 type: "FinalSlide"
@@ -236,5 +236,5 @@ key: "2b83e62a1e"
 ```
 
 `@script`
-
+Now you've learned the basic it's time to have some fun with this new architecture you've learned.
 
