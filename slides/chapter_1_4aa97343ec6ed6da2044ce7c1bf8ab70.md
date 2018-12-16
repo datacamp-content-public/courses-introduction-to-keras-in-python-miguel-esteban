@@ -57,7 +57,7 @@ key: "955fcee383"
 ```
 
 `@part1`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/5bf612d61aaf330495682c6b6d053801726f8b03/circle_dataset.jpg)
 
 
 `@part2`
@@ -67,7 +67,7 @@ key: "955fcee383"
 
 
 `@script`
-The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The Y variable encodes the labels, which are 1 for red circles and 0 for blue circles.
+The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The y variable encodes the labels, which are 1 for red circles and 0 for blue circles.
 
 
 ---
