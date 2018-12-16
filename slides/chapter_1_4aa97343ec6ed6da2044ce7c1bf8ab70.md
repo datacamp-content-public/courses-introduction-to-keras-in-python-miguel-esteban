@@ -45,7 +45,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate blue from the red circles as shown in the image.
+You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate blue from the red circles as shown in the image. So let's dive into how we would solve this problem.
 
 
 ---
@@ -79,7 +79,7 @@ center_content: true
 
 
 `@script`
-In this case I have two neurons as an input layer, you can think of them as the x and y components of each of the points on a graph.
+In this case I have two neurons as an input layer, one for the x coordinate and another for the y coordinate of each of the red and blue points of our graph.
 
 
 ---
@@ -148,56 +148,26 @@ key: "060307d6c5"
 ```python
 from keras.models import Sequential
 from keras.layers import Dense
-
+```{{1}}
+```python
 # Create sequential model
 model = Sequential()
-
+```{{2}}
+```python
 # Add input layer and a hidden layer
 model.add(Dense(4,input_shape=(2,),activation='tanh'))
 
 # Add output layer, using the sigmoid activation
 model.add(Dense(1,activation='sigmoid'))
-```
+```{{3}}
 
 
 `@part2`
-![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg)
+![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg){{4}}
 
 
 `@script`
 
-
-
----
-## Let's build it.
-
-```yaml
-type: "TwoColumns"
-key: "cacbf0008f"
-```
-
-`@part1`
-```python
-from keras.models import Sequential
-from keras.layers import Dense
-
-# Create sequential model
-model = Sequential()
-
-# Add input layer and a hidden layer
-model.add(Dense(4,input_shape=(2,),activation='tanh'))
-
-# Add output layer, with a sigmoid activation
-model.add(Dense(1,activation='sigmoid'))
-```
-
-
-`@part2`
-![](https://assets.datacamp.com/production/repositories/4255/datasets/0ac38616114bffe1b1e8031d88ba5f5421396ca5/nn_bin_class_1.jpg)
-
-
-`@script`
-Building such a model is easy! We start defining a sequential model. We then add an input layer of a chosen number of nodes, the input shape will match the number of predictor variables in your dataset. For this generic case let's suppose we have 3 predictive variables. We can then add as many hidden layers as needed, we can also choose any activation function for these. We finally add a single node as our output, and we make use of the sigmoid activation function. You've just defined a binary classification model!
 
 
 ---
