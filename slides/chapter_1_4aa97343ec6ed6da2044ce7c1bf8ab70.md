@@ -43,7 +43,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, if a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning the boundaries to separate the blue from the red circles in the image on the right.
+You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, if a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning the boundaries to separate the blue from the red circles as shown in the image.
 
 
 ---
