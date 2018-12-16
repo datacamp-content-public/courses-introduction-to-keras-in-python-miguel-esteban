@@ -95,7 +95,7 @@ key: "3054fd6daf"
 
 
 `@script`
-We finally end up with a single output neuron which makes use of the sigmoid activation function. It's important to note that, regardless of the activation functions used for the previous layers, we need the sigmoid activation function for this output node.
+We finally end up with a single output neuron which makes use of the sigmoid activation function. It's important to note that, regardless of the activation functions used for the previous layers, we need the sigmoid activation function for this last output node.
 
 
 ---
@@ -135,7 +135,7 @@ key: "cacbf0008f"
 
 
 `@script`
-
+Building such a model is easy! We start defining a sequential model. We then add an input layer of a chosen number of nodes, the input shape will match the number of predictor variables in your dataset. For this generic case let's suppose we have 3 predictive variables. We can then add as many hidden layers as needed, we can also choose any activation function for these. We finally add a single node as our output, and we make use of the sigmoid activation function. You've just defined a binary classification model!
 
 
 ---

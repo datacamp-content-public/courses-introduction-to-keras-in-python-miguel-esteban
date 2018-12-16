@@ -3,6 +3,19 @@ title: 'Chapter Title Here'
 description: 'Chapter description goes here.'
 ---
 
+## Binary Classification
+
+```yaml
+type: VideoExercise
+key: ebc3132651
+xp: 50
+```
+
+`@projector_key`
+4aa97343ec6ed6da2044ce7c1bf8ab70
+
+---
+
 ## Example coding exercise
 
 ```yaml
@@ -40,16 +53,3 @@ This is an example exercise.
 ```{python}
 
 ```
-
----
-
-## Binary Classification
-
-```yaml
-type: VideoExercise
-key: ebc3132651
-xp: 50
-```
-
-`@projector_key`
-4aa97343ec6ed6da2044ce7c1bf8ab70
