@@ -45,7 +45,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems which consist of predicting whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate blue from the red circles as shown in the image. So let's dive into how we would solve this problem.
+You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate the blue and red circles, as shown in the image. So let's try to do so.
 
 
 ---
@@ -61,7 +61,7 @@ key: "dde3977ea4"
 
 
 `@script`
-Our neural network architecture closely depends on the type of problem we are solving. For binary classification we have an input layer of N neurons, matching the number of features of our dataset.
+This is the neural network we will build to classify red and blue dots in our graph.
 
 
 ---
@@ -79,7 +79,7 @@ center_content: true
 
 
 `@script`
-In this case I have two neurons as an input layer, one for the x coordinate and another for the y coordinate of each of the red and blue points of our graph.
+In this case I have two neurons as an input layer, one for the x coordinate and another for the y coordinate of each of the red and blue circles in the graph.
 
 
 ---
@@ -133,7 +133,7 @@ center_content: true
 
 
 `@script`
-The sigmoid activation function squashes our neuron output to a number between 0 and 1. We can look at this output as the probability of our observation to be in one class or another. So we can set a threshold and say everything below 0.5 will be in class A and therefore everything above will be classified as our class B.
+The sigmoid activation function squashes our neuron output to a number between 0 and 1. We can see this output as the probability of our observation to be in one class or another. So we can set a threshold and say everything below 0.5 will be a blue circle and therefore everything above will be classified as a red one.
 
 
 ---
@@ -168,7 +168,11 @@ model.add(Dense(1,activation='sigmoid'))
 
 
 `@script`
-
+So let's build our model in keras. 
+We start by importing the sequential model and the dense layer.
+We then create a sequential model.
+We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function for this hidden layer. 
+We finally add an output layer which contains a single neuron, we make use of the sigmoid activation functions so that we achieve the behavior we expect from the network.
 
 
 ---
