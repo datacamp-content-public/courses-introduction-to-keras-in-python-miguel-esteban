@@ -39,7 +39,7 @@ center_content: true
 
 
 `@part2`
-**Separate blue from red circles.
+**Separate Blue from Red Circles.
 **
 ![](https://assets.datacamp.com/production/repositories/4255/datasets/9a5729386cd27addd95b1a66a42f0e4c2cbb18aa/binaryClassificationExample_1.png)
 
