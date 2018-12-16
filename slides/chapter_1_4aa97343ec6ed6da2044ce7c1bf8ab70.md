@@ -140,12 +140,56 @@ The sigmoid activation function squashes our neuron output to a number between 0
 ## Let's build it.
 
 ```yaml
+type: "TwoRows"
+key: "060307d6c5"
+```
+
+`@part1`
+```python
+from keras.models import Sequential
+from keras.layers import Dense
+
+# Create sequential model
+model = Sequential()
+
+# Add input layer and a hidden layer
+model.add(Dense(4,input_shape=(2,),activation='tanh'))
+
+# Add output layer, using the sigmoid activation
+model.add(Dense(1,activation='sigmoid'))
+```
+
+
+`@part2`
+![](https://assets.datacamp.com/production/repositories/4255/datasets/f72bb9abe50c4d3c70571ab871b64faddb2525aa/nn_rotated_1.jpg)
+
+
+`@script`
+
+
+
+---
+## Let's build it.
+
+```yaml
 type: "TwoColumns"
 key: "cacbf0008f"
 ```
 
 `@part1`
+```python
+from keras.models import Sequential
+from keras.layers import Dense
 
+# Create sequential model
+model = Sequential()
+
+# Add input layer and a hidden layer
+model.add(Dense(4,input_shape=(2,),activation='tanh'))
+
+# Add output layer, with a sigmoid activation
+model.add(Dense(1,activation='sigmoid'))
+```
 
 
 `@part2`
