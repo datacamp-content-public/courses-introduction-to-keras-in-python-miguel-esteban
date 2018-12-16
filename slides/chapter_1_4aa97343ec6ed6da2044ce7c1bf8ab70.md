@@ -149,31 +149,11 @@ key: "cacbf0008f"
 
 
 `@part2`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/0ac38616114bffe1b1e8031d88ba5f5421396ca5/nn_bin_class_1.jpg)
 
 
 `@script`
 Building such a model is easy! We start defining a sequential model. We then add an input layer of a chosen number of nodes, the input shape will match the number of predictor variables in your dataset. For this generic case let's suppose we have 3 predictive variables. We can then add as many hidden layers as needed, we can also choose any activation function for these. We finally add a single node as our output, and we make use of the sigmoid activation function. You've just defined a binary classification model!
-
-
----
-## Binary Cross Entropy
-
-```yaml
-type: "TwoColumns"
-key: "1ff3fc83a6"
-```
-
-`@part1`
-
-
-
-`@part2`
-
-
-
-`@script`
-
 
 
 ---
