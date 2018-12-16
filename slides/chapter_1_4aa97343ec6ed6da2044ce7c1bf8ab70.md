@@ -119,7 +119,7 @@ center_content: true
 
 
 `@script`
-Then we have a number of hidden layers, this will vary depending on our data and experimentation. We just have one in this example.
+Then we have a number of hidden layers, this will vary depending on our data and experimentation. But we just have one in this example.
 
 
 ---
@@ -196,7 +196,7 @@ So let's build our model in keras.
 - We start by importing the sequential model and the dense layer.
 - We then create a sequential model.
 - We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function, for this hidden layer. 
-- We finally add an output layer which contains a single neuron, we make use of the sigmoid activation functions so that we achieve the behavior we expect from this network.
+- We finally add an output layer which contains a single neuron, we make use of the sigmoid activation function so that we achieve the behavior we expect from this network.
 
 Our model is ready to be trained.
 
@@ -229,11 +229,13 @@ model.train(X,y,epochs=20)
 Just as before, we need to compile our model before training. 
 We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. 
 
-Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
+Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a value very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
 
-We finally train our model for 20 epochs passing X and y.
+We finally train our model for 20 epochs passing our dataset X and our labels y as parameters.
 
 The boundaries this model learned to classify our circles is shown in the graph below.
+
+It did pretty well!
 
 
 ---
