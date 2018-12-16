@@ -67,7 +67,7 @@ key: "955fcee383"
 
 
 `@script`
-The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The y variable encodes the labels, which are 1 for red circles and 0 for the blue circles.
+The dataset for this problem is very simple. The predictors stored in X are pairs of values corresponding to the X and Y coordinates of each circle in the graph. The y variable encodes the labels, which are 1 for red circles and 0 for the blue circles.
 
 
 ---
