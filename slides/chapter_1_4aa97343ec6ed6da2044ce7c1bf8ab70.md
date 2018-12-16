@@ -45,7 +45,7 @@ center_content: true
 
 
 `@script`
-You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could consist in learning boundaries to separate the blue and red circles, as shown in the image. So let's try to do so.
+You will use binary classification when you want to solve problems where you predict whether an observation belongs to one of two possible classes. For instance distinguishing between fraudulent or non fraudulent clients, swimming or running, telling whether a picture shows a cat or a dog, if someone will survive or die, etc. A simple binary classification problem could be learning the boundaries to separate the blue and red circles shown in the image. So let's try to do so.
 
 
 ---
@@ -67,7 +67,7 @@ key: "955fcee383"
 
 
 `@script`
-The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The y variable encodes the labels, which are 1 for red circles and 0 for blue circles.
+The dataset for this problem is very simple. The predictors correspond to the X and Y coordinates of each circle in the graph. The y variable encodes the labels, which are 1 for red circles and 0 for the blue circles.
 
 
 ---
@@ -229,11 +229,15 @@ model.train(X,y,epochs=20)
 Just as before, we need to compile our model before training. 
 We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. 
 
-Cross-entropy loss increases as the predicted probability diverges from the actual label. So imagine predicting a probability of .012 (a very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome from our network and therefore result in a high loss value.
+Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
+
+We finally train our model for 20 epochs passing X and y.
+
+The boundaries this model learned to classify our circles is shown in the graph below.
 
 
 ---
-## Let's practice !
+## Let's practice!
 
 ```yaml
 type: "FinalSlide"
@@ -241,5 +245,5 @@ key: "2b83e62a1e"
 ```
 
 `@script`
-Now you've learned the basic it's time to have some fun with this new architecture you've learned.
+Now you've learned the basics it's time to have some fun with this new architecture you've learned.
 
