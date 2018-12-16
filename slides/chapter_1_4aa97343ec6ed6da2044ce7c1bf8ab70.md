@@ -34,7 +34,7 @@ center_content: true
 - Swimming or running.
 - Winter or Summer.
 - Cat or Dog.
-- Dead or alive.
+- Survived or died.
 - ...
 
 
