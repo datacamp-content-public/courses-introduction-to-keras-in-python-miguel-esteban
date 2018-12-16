@@ -156,10 +156,11 @@ model = Sequential()
 ```python
 # Add input layer and a hidden layer
 model.add(Dense(4,input_shape=(2,),activation='tanh'))
-
+```{{3}}
+```python
 # Add output layer, using the sigmoid activation
 model.add(Dense(1,activation='sigmoid'))
-```{{3}}
+```{{4}}
 
 
 `@part2`
