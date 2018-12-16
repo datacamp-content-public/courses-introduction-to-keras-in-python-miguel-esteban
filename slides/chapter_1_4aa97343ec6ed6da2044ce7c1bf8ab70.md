@@ -119,7 +119,7 @@ center_content: true
 
 
 `@script`
-Then we have a number of hidden layers, this will vary depending on our data and experimentation.
+Then we have a number of hidden layers, this will vary depending on our data and experimentation. We just have one in this example.
 
 
 ---
@@ -192,10 +192,12 @@ model.add(Dense(1,activation='sigmoid'))
 
 `@script`
 So let's build our model in keras. 
-We start by importing the sequential model and the dense layer.
-We then create a sequential model.
-We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function for this hidden layer. 
-We finally add an output layer which contains a single neuron, we make use of the sigmoid activation functions so that we achieve the behavior we expect from the network.
+
+- We start by importing the sequential model and the dense layer.
+- We then create a sequential model.
+- We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function, for this hidden layer. 
+- We finally add an output layer which contains a single neuron, we make use of the sigmoid activation functions so that we achieve the behavior we expect from this network.
+
 Our model is ready to be trained.
 
 
@@ -224,7 +226,10 @@ model.train(X,y,epochs=20)
 
 
 `@script`
-Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 (very close to 0 for blue circle) when the actual observation label is 1 (red circle) would be a bad and result in a high loss value.
+Just as before, we need to compile our model before training. 
+We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. 
+
+Cross-entropy loss increases as the predicted probability diverges from the actual label. So imagine predicting a probability of .012 (a very close to 0 result, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome from our network and therefore result in a high loss value.
 
 
 ---
