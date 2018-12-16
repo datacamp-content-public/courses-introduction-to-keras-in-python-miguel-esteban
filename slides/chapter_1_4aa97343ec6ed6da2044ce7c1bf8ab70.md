@@ -222,7 +222,7 @@ model.train(X,y,epochs=20)
 
 
 `@script`
-Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 when the actual observation label is 1 would be a bad and result in a high loss value.
+Just as before, we need to compile our model before training. We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. Cross-entropy loss increases as the predicted probability diverges from the actual label. So predicting a probability of .012 (very close to 0 for blue circle) when the actual observation label is 1 (red circle) would be a bad and result in a high loss value.
 
 
 ---
