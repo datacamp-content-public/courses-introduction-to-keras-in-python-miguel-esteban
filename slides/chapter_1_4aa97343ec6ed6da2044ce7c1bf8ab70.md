@@ -232,7 +232,7 @@ Cross-entropy loss increases as the predicted probability diverges from the actu
 
 We finally train our model for 20 epochs passing our dataset (X) and our labels (y) as parameters.
 
-The boundaries this model learned to classify our circles are shown in the graph below.
+The boundaries learned to classify our circles are shown in the graph below.
 
 I think it did pretty well!
 
