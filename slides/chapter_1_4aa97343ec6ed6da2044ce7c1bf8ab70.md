@@ -17,7 +17,7 @@ title: Data Scientist & Founder
 
 
 `@script`
-You're now ready to learn about binary classification, which it's the same as saying a two-class classification. So let's dive in.
+You're now ready to learn about binary classification, which it's the same as saying two-class classification. So let's dive in.
 
 
 ---
@@ -216,8 +216,7 @@ from keras.optimizers import SGD
 ```python
 # Compile our model, we'll use binary-crossentropy
 model.compile(optimizer=SGD(lr=0.5),
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
+              loss='binary_crossentropy')
 ```{{2}}
 ```python
 model.train(X,y,epochs=20)
@@ -227,13 +226,13 @@ model.train(X,y,epochs=20)
 
 `@script`
 Just as before, we need to compile our model before training. 
-We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function. 
+We will use stochastic gradient descent as an optimizer and binary crossentropy as our loss function.
 
 Cross-entropy loss increases as the predicted probability diverges from the actual label. Imagine we predicted .012 (a value very close to 0, therefore very close to a blue circle), when the actual observation label was 1, (a red circle). This would be a very bad outcome for our network and therefore result in a high loss value.
 
-We finally train our model for 20 epochs passing our dataset X and our labels y as parameters.
+We finally train our model for 20 epochs passing our dataset (X) and our labels (y) as parameters.
 
-The boundaries this model learned to classify our circles is shown in the graph below.
+The boundaries this model learned to classify our circles are shown in the graph below.
 
 I think it did pretty well!
 
