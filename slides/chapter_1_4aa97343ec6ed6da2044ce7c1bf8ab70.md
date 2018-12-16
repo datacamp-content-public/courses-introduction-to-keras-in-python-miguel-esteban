@@ -173,6 +173,29 @@ We start by importing the sequential model and the dense layer.
 We then create a sequential model.
 We add a hidden layer of 4 nodes and we define an input shape, which consist of 2 neurons,we will use the tanh, or hyperbolic tangent activation function for this hidden layer. 
 We finally add an output layer which contains a single neuron, we make use of the sigmoid activation functions so that we achieve the behavior we expect from the network.
+Our model is ready to be trained.
+
+
+---
+## Compiling our model.
+
+```yaml
+type: "TwoColumns"
+key: "fa203d4d8e"
+```
+
+`@part1`
+```python
+
+```
+
+
+`@part2`
+
+
+
+`@script`
+Before training we need to compile our model.
 
 
 ---
