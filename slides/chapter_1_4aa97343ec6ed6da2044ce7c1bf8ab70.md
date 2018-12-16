@@ -101,15 +101,17 @@ Then we have a number of hidden layers, this will vary depending on our data and
 
 
 ---
-## An architecture for our problem.
+## An architecture for our problem IV
 
 ```yaml
 type: "FullImageSlide"
-key: "3054fd6daf"
+key: "7152c0432c"
+disable_transition: true
+center_content: true
 ```
 
 `@part1`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/a7e4e63f43f1ba0e17d7b59a58720279e704d3cf/nn_bin_class_4.jpg)
 
 
 `@script`
@@ -120,16 +122,14 @@ We finally end up with a single output neuron which makes use of the sigmoid act
 ## The sigmoid function.
 
 ```yaml
-type: "TwoRows"
-key: "38db70007c"
+type: "FullImageSlide"
+key: "5a9b2b811d"
+disable_transition: true
+center_content: true
 ```
 
 `@part1`
-
-
-
-`@part2`
-
+![](https://assets.datacamp.com/production/repositories/4255/datasets/ed50e362b3e2a6f4d5f23aa3863860c1d8b1af4a/nn_bin_class_5.jpg)
 
 
 `@script`
