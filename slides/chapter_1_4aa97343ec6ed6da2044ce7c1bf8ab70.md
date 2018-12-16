@@ -41,7 +41,7 @@ center_content: true
 `@part2`
 **Separate Blue from Red Circles.
 **
-![](https://assets.datacamp.com/production/repositories/4255/datasets/9a5729386cd27addd95b1a66a42f0e4c2cbb18aa/binaryClassificationExample_1.png)
+![](https://assets.datacamp.com/production/repositories/4255/datasets/2c3b85207be989718296699359a34fa49ec18da1/binaryClassificationExample_1.png)
 
 
 `@script`
